@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="calculator">
-        <input id="display" readonly>
+        <input id="display">
         <div id="keys">
             <button class="operator-btn" onclick="appendToDisplay('+')">+</button>
             <button onclick="appendToDisplay('7')">7</button>
@@ -27,6 +27,9 @@
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="calculate()">=</button>
             <button class="operator-btn" onclick="clearDisplay()">C</button>
+            <button class="operator-btn" onclick="deletepre()">D</button>
+            <button class="operator-btn" onclick="backward()"><</button>
+            <button class="operator-btn" onclick="forward()">></button>
         </div>
     </div>
     <script src="calculator.js"></script>
